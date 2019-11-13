@@ -1,0 +1,106 @@
+nav {
+    background-color: #0f1122;;
+    height: 50px;
+    padding: 0px 64px;
+
+    .nav_logo {
+        float: left;
+        line-height: 50px;
+        color: $gold;
+    }
+
+    .nav_links {
+        float: right;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $gold;
+                    padding: 0px 16px;
+                    line-height: 50px;
+                    font-size: 13px;
+                }
+
+                a:hover {
+                    color: $light-blue;
+                    transition: 300ms ease-in-out;
+                }
+            }
+        }
+    }
+
+    .nav_links.active {
+        display: block;
+        opacity: 1;
+    }
+}
+
+
+
+
+// nav toggle button
+.nav_toggle {
+    position: absolute;
+    right: 1em;
+    float: right;
+    width: 20px;
+    height: 50px;
+    position: relative;
+}
+
+.nav_toggle span {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 22px;
+    border-radius: 2px;
+    display: block;
+    height: 2px;
+    background-color: $gold;
+}
+
+span:nth-child(1) {
+    width: 100%;
+    top: 18px;
+    transition: all 200ms ease-in-out;
+}
+
+span:nth-child(2) {
+    width: 100%;
+    top: 25px;
+    transition: all 300ms ease-in-out;
+}
+
+span:nth-child(3) {
+    width: 100%;
+    top: 32px;
+    transition: all 200ms ease-in-out;
+}
+
+
+
+
+/* active */
+.nav_toggle.active {
+    span:nth-child(1) {
+        width: 100%;
+        transform: translateY(8px) rotate(-45deg);
+    }
+
+    span:nth-child(2) {
+        opacity: 0;
+    }
+
+    span:nth-child(3) {
+        width: 100%;
+        margin-left: 0px;
+        transform: translateY(-6px) rotate(45deg);
+    }
+}

@@ -1,0 +1,50 @@
+// // Media Query Mixins
+
+$desktop: 1200px;
+$laptop: 769px;
+
+// ipad 768 x 1024
+$ipad: 768px;               
+$ipad-landscape: 1024px;
+
+// iphone 320 x 568 
+$iphone: 320px;
+$iphone-landsape: 568px;
+
+
+
+
+
+
+
+
+// navbar in iphone and ipad
+@mixin iphone-ipad {
+    @media (min-width: #{$iphone}) and (max-width: #{$ipad}) {
+        @content;
+    }
+}
+
+@mixin iphone {
+    @media (min-width: #{$iphone}) and (max-width: #{$iphone-landsape}) {
+        @content;
+    }
+}
+
+@mixin iphone-landscape {
+    @media (min-width: #{$iphone-landsape}) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media (min-width: #{$ipad}){
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$laptop}) {
+        @content;
+    }
+}

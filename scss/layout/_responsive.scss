@@ -1,0 +1,318 @@
+@include iphone-ipad {
+    nav {
+        padding: 0px 20px;
+
+        .nav_links {
+            z-index: 5;
+            opacity: 0;
+            transition: 300ms ease-in-out;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            background-color: #0f1122;
+            top: 50px;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: block;
+
+                li {
+                    text-align: center;
+                    padding: 10px 0px;
+                }
+            }
+        }
+    }
+
+    .hero {
+        .hero_content {
+            height: 75%;
+            h1 {
+                font-size: 1.9em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+    }
+
+    .about {
+        height: 90vh;
+
+        .about_content {
+            
+            h1 {
+                font-size: 20px;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 15px;
+                text-align: justify;
+            }
+        }
+    }
+
+    .framework-and-skills {
+        .framework-and-skills_content {
+            .skills,
+            .frameworks {
+                padding: 2em 0em;
+                
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .conference {
+        .conference_content {
+            height: 80%;
+            @include flex(column, center, center);
+            padding: 2em 0em;
+            h6 {
+                font-size: 1.5em;
+                text-align: center;
+                padding-bottom: 1em;
+            }
+
+            ul {
+                li {
+                    .card {
+                        .card_content {
+                            text-align: center;
+                            h1 {
+                                line-height: 1em;
+                            }
+
+                            small {
+                                font-size: 12px;
+                                line-height: 2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .myworks-web {
+        .myworks-web_content {
+            padding: 2em 0em;
+            h1 {
+                padding: 1em 0em;
+                font-size: 1.5em;
+            }
+        }
+    }
+
+    .myworks-responsive {
+        .myworks-reponsive_content {
+            ul {
+                @include flex(row, center, center);
+                li {
+                    padding: 2em 1em;
+                    img {
+                        height: 135px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include ipad {
+    .hero {
+        height: 100vh;
+        .hero_content {
+            height: 85%;
+        }
+    }
+
+    .about {
+        height: 40vh;
+    }
+
+    .framework-and-skills {
+        .framework-and-skills_content {
+            .skills {
+                ul {
+                    li {
+                        img {
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .conference {
+        .conference_content {
+
+            h6 {
+                text-align: center;
+            }
+            
+            ul {
+                @include flex(row, center, center);
+            }
+        }
+    }
+}
+
+
+
+
+@include laptop {
+    .nav_toggle {
+        display: none;
+    }
+
+    .hero {
+        height: 115vh;
+        .hero_content {
+            h1 {
+                font-size: 3em;
+            }
+        }
+    }
+
+    .about {
+        height: 50vh;
+        .about_content {
+            height:70%;
+
+            h1 {
+                line-height: 40px;
+            }
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+
+    .framework-and-skills {
+        height: 80vh;
+        .framework-and-skills_content {
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            .skills,
+            .frameworks {
+                height: 100%;
+                @include flex(column, center, center);
+                h1 {
+                    font-size: 2em;
+                }
+            }
+            .skills {
+                flex-basis: 50%;
+            }
+    
+            .frameworks {
+                flex-basis: 50%;
+            }
+        }
+    }
+
+    .conference {
+        height: 55vh;
+        display: flex;
+        align-items: center;
+        
+        .conference_content {
+            height: 60%;
+            h6 {
+                font-size: 1.5em;
+            }
+
+            ul {
+                li {
+                    padding: 2em 2em;
+                    .card {
+                        .card_content {
+                            h1 {
+                                line-height: 2em;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .myworks-web {
+        .myworks-web_content {
+            padding: 4em 0em;
+            h1 {
+                padding: 2em 0em;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .myworks-responsive {
+        .myworks-reponsive_content {
+            ul {
+                @include flex(row, center, center);
+                li {
+                    padding: 5em 4em;
+                    img {
+                        height: 440px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@include iphone-landscape {
+    .myworks-responsive {
+        .myworks-reponsive_content {
+            ul {
+                li {
+                    img {
+                        height: 255px;
+                    }
+                }
+            }
+        }
+    }
+
+    .conference {
+        .conference_content {
+            ul {
+                @include flex(row, center, center);
+                li {
+                   .card {
+                       .card_content {
+                           h1 {
+                               font-size: 1.2em;
+                               line-height: 2em;
+                           }
+                           h2 {
+                               line-height: 1.2em;
+                               font-size: 0.9em;
+                           }
+                           h3 {
+                                padding: 0.3em 0em;
+                                font-size: 0.9em;
+                           }
+                           small {
+                                font-size: 0.7em;
+                           }
+                       }
+                   }
+                }
+            }
+        }
+    }
+}

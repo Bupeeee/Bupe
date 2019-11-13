@@ -1,0 +1,1 @@
+Component file is for components such as buttons, navbars, cards, anything that is reusable. Since we have a small project our component file should be manageable

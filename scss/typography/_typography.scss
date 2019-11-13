@@ -1,0 +1,32 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// font weight
+.fw-black {
+    font-weight: 900;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.blue-text {
+    color: $blue;
+}
+
+.gold-text {
+    color: $gold;
+}
