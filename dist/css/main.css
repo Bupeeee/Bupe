@@ -619,6 +619,19 @@ body {
 .footer .footer_content p {
   font-size: 0.8em;
 }
+.footer .footer_content ul {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer_content ul li {
+  padding: 1em 0.5em;
+}
+.footer .footer_content ul li img {
+  height: 30px;
+}
 
 nav {
   background-color: #0f1122;
@@ -629,6 +642,7 @@ nav .nav_logo {
   float: left;
   line-height: 50px;
   color: #FCD787;
+  cursor: pointer;
 }
 nav .nav_links {
   float: right;

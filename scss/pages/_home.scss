@@ -215,5 +215,15 @@ body {
         p {
             font-size: 0.8em;
         }
+        ul {
+            display: flex;
+            @include flex(row, center, center);
+            li {
+                padding: 1em 0.5em;
+                img {
+                    height: 30px;
+                }
+            }
+        }
     }
 }
