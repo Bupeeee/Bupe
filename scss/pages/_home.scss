@@ -40,6 +40,13 @@ body {
                 }
             }
         }
+
+        .button-section {
+            display: flex;
+            button {
+                margin: 1em 1em;
+            }
+        }
     }
 
     .hero_footer {
