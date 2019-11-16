@@ -219,7 +219,7 @@ body {
             display: flex;
             @include flex(row, center, center);
             li {
-                padding: 1em 0.5em;
+                padding: 0.5em 0.5em;
                 img {
                     height: 30px;
                 }

@@ -627,14 +627,13 @@ body {
   align-items: center;
 }
 .footer .footer_content ul li {
-  padding: 1em 0.5em;
+  padding: 0.5em 0.5em;
 }
 .footer .footer_content ul li img {
   height: 30px;
 }
 
 nav {
-  background-color: #0f1122;
   height: 50px;
   padding: 0px 64px;
 }
@@ -725,6 +724,7 @@ span:nth-child(3) {
 
 @media (min-width: 320px) and (max-width: 768px) {
   nav {
+    background-color: #0f1122;
     padding: 0px 20px;
   }
   nav .nav_links {
@@ -822,6 +822,11 @@ span:nth-child(3) {
   .myworks-responsive .myworks-reponsive_content ul li img {
     height: 135px;
   }
+
+  .footer .footer_content h5 {
+    font-size: 0.5em;
+    line-height: 15px;
+  }
 }
 @media (min-width: 768px) {
   .hero {
@@ -850,6 +855,10 @@ span:nth-child(3) {
   }
 }
 @media (min-width: 769px) {
+  nav {
+    background-color: #171932;
+  }
+
   .nav_toggle {
     display: none;
   }

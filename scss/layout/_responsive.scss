@@ -1,5 +1,6 @@
 @include iphone-ipad {
     nav {
+        background-color: #0f1122;
         padding: 0px 20px;
 
         .nav_links {
@@ -122,6 +123,15 @@
             }
         }
     }
+
+    .footer {
+        .footer_content {
+            h5 {
+                font-size: 0.5em;
+                line-height: 15px;
+            }
+        }
+    }
 }
 
 
@@ -169,6 +179,9 @@
 
 
 @include laptop {
+    nav {
+        background-color: $blue;
+    }
     .nav_toggle {
         display: none;
     }
